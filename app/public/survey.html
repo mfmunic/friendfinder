@@ -3,9 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
-    
-    <!-- reset file -->
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -16,36 +13,166 @@
     <!-- Font Awesome CSS Icons (For cool glyphicons) -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-    <!-- my own css -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
     
 </head>
 <body>
     
     <div class="container">
-        <div class="jumbotron">
-            <h1>
-                <i class="fa fa-facebook-square" aria-hidden="true"></i>
-            Friend Finder
-            </h1>
-            
-            <hr>
+        <h2>Survey Questions</h2>
+        <hr>
 
-            <h2>Answer a few basic questions.</h2>
-            <h2>Then find the friend with the greatest compatibility!</h2>
-            <br>
-            <div>
-                <a href="/survey">
-                    <button type="button" class="btn btn-lg btn-primary">
-                        <h4>
-                            <span class="glyphicon glyphicon-list-alt"></span>
-                        Go To Survey
-                        </h4>
-                    </button>
-                </a>
-            </div>
-        </div>
+        <h3>
+            <strong>About You</strong>
+        </h3>
+
+        <h4>Name (Required)</h4>
+        <input type="text" name="name" class="form-control" required>
+
+        <h4>Link to a photo (Required)</h4>
+        <input type="text" name="photo" class="form-control" required>
+        <hr>
+
+        <h3>
+            <strong>Question 1</strong>
+        </h3>
+
+        <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+
+        <form id="q1">
+            <input type="radio" name="q1" id="q1a1" value="1" checked>1 (Strongly Disagree)<br>
+            <input type="radio" name="q1" id="q1a2" value="2">2<br>
+            <input type="radio" name="q1" id="q1a3" value="3">3<br>
+            <input type="radio" name="q1" id="q1a4" value="4">4<br>
+            <input type="radio" name="q1" id="q1a5" value="5">5 (Strongly Agree)<br>
+        </form>
+
+        <h3>
+            <strong>Question 2</strong>
+        </h3>
+
+         <h4>Generally Speaking You Rely more on your experience that your imagination.</h4>
+        <form id="q2">
+            <input type="radio" name="q2" value="1" checked>1 (Strongly Disagree)<br>
+            <input type="radio" name="q2" value="2">2<br>
+            <input type="radio" name="q2" value="3">3<br>
+            <input type="radio" name="q2" value="4">4<br>
+            <input type="radio" name="q2" value="5">5 (Strongly Agree)<br>
+        </form>
+
+        <h3>
+            <strong>Question 3</strong>
+        </h3>
+
+         <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+        <form id="q3">
+            <input type="radio" name="q3" value="1" checked>1 (Strongly Disagree)<br>
+            <input type="radio" name="q3" value="2">2<br>
+            <input type="radio" name="q3" value="3">3<br>
+            <input type="radio" name="q3" value="4">4<br>
+            <input type="radio" name="q3" value="5">5 (Strongly Agree)<br>
+        </form>
+
+        <h3>
+            <strong>Question 4</strong>
+        </h3>
+
+         <h4>You rarely do something just out of sheer curiosity</h4>
+        <form id="q4">
+            <input type="radio" name="q4" value="1" checked>1 (Strongly Disagree)<br>
+            <input type="radio" name="q4" value="2">2<br>
+            <input type="radio" name="q4" value="3">3<br>
+            <input type="radio" name="q4" value="4">4<br>
+            <input type="radio" name="q4" value="5">5 (Strongly Agree)<br>
+        </form>
+
+        <h3>
+            <strong>Question 5</strong>
+        </h3>
+
+         <h4>People can rarely upset you.</h4>
+        <form id="q5">
+            <input type="radio" name="q5" value="1" checked>1 (Strongly Disagree)<br>
+            <input type="radio" name="q5" value="2">2<br>
+            <input type="radio" name="q5" value="3">3<br>
+            <input type="radio" name="q5" value="4">4<br>
+            <input type="radio" name="q5" value="5">5 (Strongly Agree)<br>
+        </form>
+
+        <h3>
+            <strong>Question 6</strong>
+        </h3>
+
+         <h4>It is often difficult for you to relate to other people's feelings.</h4>
+        <form id="q6">
+            <input type="radio" name="q6" value="1" checked>1 (Strongly Disagree)<br>
+            <input type="radio" name="q6" value="2">2<br>
+            <input type="radio" name="q6" value="3">3<br>
+            <input type="radio" name="q6" value="4">4<br>
+            <input type="radio" name="q6" value="5">5 (Strongly Agree)<br>
+        </form>
+
+        <h3>
+            <strong>Question 7</strong>
+        </h3>
+
+         <h4>In a discussion, truth should be more important that people's sensitivities.</h4>
+        <form id="q7">
+            <input type="radio" name="q7" value="1" checked>1 (Strongly Disagree)<br>
+            <input type="radio" name="q7" value="2">2<br>
+            <input type="radio" name="q7" value="3">3<br>
+            <input type="radio" name="q7" value="4">4<br>
+            <input type="radio" name="q7" value="5">5 (Strongly Agree)<br>
+        </form>
+
+        <h3>
+            <strong>Question 8</strong>
+        </h3>
+
+         <h4>You rarely get carried away by fantasies and ideas.</h4>
+        <form id="q8">
+            <input type="radio" name="q8" value="1" checked>1 (Strongly Disagree)<br>
+            <input type="radio" name="q8" value="2">2<br>
+            <input type="radio" name="q8" value="3">3<br>
+            <input type="radio" name="q8" value="4">4<br>
+            <input type="radio" name="q8" value="5">5 (Strongly Agree)<br>
+        </form>
+
+        <h3>
+            <strong>Question 9</strong>
+        </h3>
+
+         <h4>You think that everyone's views should be respected regardless of wether they are supported by facts or not.</h4>
+        <form id="q9">
+            <input type="radio" name="q9" value="1" checked>1 (Strongly Disagree)<br>
+            <input type="radio" name="q9" value="2">2<br>
+            <input type="radio" name="q9" value="3">3<br>
+            <input type="radio" name="q9" value="4">4<br>
+            <input type="radio" name="q9" value="5">5 (Strongly Agree)<br>
+        </form>
+
+        <h3>
+            <strong>Question 10</strong>
+        </h3>
+
+         <h4>You feel more energetic after spending time with a group of people.</h4>
+        <form id="q10">
+            <input type="radio" name="q10" value="1" checked>1 (Strongly Disagree)<br>
+            <input type="radio" name="q10" value="2">2<br>
+            <input type="radio" name="q10" value="3">3<br>
+            <input type="radio" name="q10" value="4">4<br>
+            <input type="radio" name="q10" value="5">5 (Strongly Agree)<br>
+        </form>
+
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
+            Submit
+        </button>
     </div>
+
+
+
+    <hr>
 
     <footer class="footer">
         <div class="container">
@@ -57,11 +184,10 @@
         </div>
     </footer>
 <!-- jQuery JS -->
-<script src="https://code.jquery.com/jquery.js"></script>
+
 
 <!-- Code to the Javascript File -->
-<script type="text/javascript" src="assets/javascript/script.js">
-</script>
+<script type="text/javascript" src="javascrtipt/script.js"></script>
 
 </body>
 </html>

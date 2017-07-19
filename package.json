@@ -1,0 +1,20 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "finds friends",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mfmunic/friendfinder.git"
+  },
+  "author": "Marc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mfmunic/friendfinder/issues"
+  },
+  "homepage": "https://github.com/mfmunic/friendfinder#readme"
+}
