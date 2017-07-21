@@ -7,12 +7,13 @@ var app = express();
 
 var PORT = process.env.PORT || 3000;
 
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json());
-app.use('/assets', express.static(path.join(__dirname, 'public')))
+app.use(express.static('public'))
 
-require("./app/routing/apiRoutes.js")(app);
-require("./app/routing/htmlRoutes.js")(app);
+require("./routing/apiRoutes.js")(app);
+require("./routing/htmlRoutes.js")(app);
+
 //------------port---------------
 app.listen(PORT, function() {
     console.log("App listening on PORT: " + PORT);
